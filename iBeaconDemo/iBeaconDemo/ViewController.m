@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import "AIBBeaconRegionAny.h"
 #import "DetailVC.h"
 
 /**
@@ -23,7 +24,7 @@
 @property (nonatomic, copy) NSMutableArray *ibeaconArr;
 @property (nonatomic, strong) NSMutableDictionary *rangedRegions;
 @property (nonatomic, strong) CBCentralManager *bluetoothManager;
-@property (nonatomic, strong) CLBeaconRegion *ibeacon1;
+@property (nonatomic, strong) AIBBeaconRegionAny *ibeacon1;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, assign) BOOL isInsideRegion;
 
@@ -44,7 +45,7 @@
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     
-    self.ibeacon1 = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:BEACONUUID] identifier:[[NSBundle mainBundle] bundleIdentifier]];
+    self.ibeacon1 = [[AIBBeaconRegionAny alloc] initWithIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
     
     self.ibeacon1.notifyEntryStateOnDisplay = YES;
     self.ibeacon1.notifyOnExit = YES;
