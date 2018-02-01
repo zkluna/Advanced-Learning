@@ -1,0 +1,38 @@
+//
+//  Header.pch
+//  whirlingworld
+//
+//  Created by apple on 2017/3/9.
+//  Copyright © 2017年 hhh. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#pragma mark -- frame --
+
+#define _kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define _kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define isIphone4 _kScreenWidth == 480
+#define isIphone5 _kScreenWidth == 568
+#define isIphone6 _kScreenWidth == 667
+#define isIphone6plus _kScreenWidth == 736
+
+#pragma mark -- color --
+
+#define RGBColor(a, b, c) [UIColor colorWithRed:(a)/255.0 green:(b)/255.0 blue:(c)/255.0 alpha:1]
+#define RGBAColor(a, b, c, d) [UIColor colorWithRed:(a)/255.0 green:(b)/255.0 blue:(c)/255.0 alpha:(d)]
+#define hexColor(colorV) [UIColor colorWithHexColorString:@#colorV]
+#define hexColorAlpha(colorV,a) [UIColor colorWithHexColorString:@#colorV alpha:a];
+
+// 友盟推送
+#define UM_appkey @"58b7cd48734be457b10024a0"
+#define UM_push_secret @"fa8e9gclwavy3mskdiucxxnqt0gzqb7f"
+
+
+
+#endif /* Header_pch */

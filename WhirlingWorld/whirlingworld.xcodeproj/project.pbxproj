@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182B47721E712BAC00152A17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B47711E712BAC00152A17 /* main.m */; };
+		182B47751E712BAC00152A17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B47741E712BAC00152A17 /* AppDelegate.m */; };
+		182B47781E712BAC00152A17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B47771E712BAC00152A17 /* ViewController.m */; };
+		182B477B1E712BAC00152A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182B47791E712BAC00152A17 /* Main.storyboard */; };
+		182B477D1E712BAC00152A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182B477C1E712BAC00152A17 /* Assets.xcassets */; };
+		182B47801E712BAC00152A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182B477E1E712BAC00152A17 /* LaunchScreen.storyboard */; };
+		182B478B1E712BAE00152A17 /* whirlingworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B478A1E712BAE00152A17 /* whirlingworldTests.m */; };
+		182B47961E712BAE00152A17 /* whirlingworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B47951E712BAE00152A17 /* whirlingworldUITests.m */; };
+		182B47B51E71419300152A17 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B47B41E71419300152A17 /* HealthKit.framework */; };
+		182B47BB1E7142B500152A17 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B47BA1E7142B500152A17 /* libz.tbd */; };
+		182B47C71E71496E00152A17 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B47C61E71496E00152A17 /* CoreTelephony.framework */; };
+		182B47C91E71498200152A17 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B47C81E71498200152A17 /* libsqlite3.tbd */; };
+		185909C21E767C3900C259DC /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185909C11E767C3900C259DC /* ShareViewController.m */; };
+		185909C51E767C3900C259DC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185909C31E767C3900C259DC /* MainInterface.storyboard */; };
+		185909C91E767C3900C259DC /* whirlingShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 185909BE1E767C3900C259DC /* whirlingShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		185909D01E76879A00C259DC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CD1E76879A00C259DC /* 2.png */; };
+		185909D11E76879A00C259DC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CD1E76879A00C259DC /* 2.png */; };
+		185909D21E76879A00C259DC /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CD1E76879A00C259DC /* 2.png */; };
+		185909D31E76879A00C259DC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CE1E76879A00C259DC /* 1.png */; };
+		185909D41E76879A00C259DC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CE1E76879A00C259DC /* 1.png */; };
+		185909D51E76879A00C259DC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CE1E76879A00C259DC /* 1.png */; };
+		185909D61E76879A00C259DC /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CF1E76879A00C259DC /* 0.png */; };
+		185909D71E76879A00C259DC /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CF1E76879A00C259DC /* 0.png */; };
+		185909D81E76879A00C259DC /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 185909CF1E76879A00C259DC /* 0.png */; };
+		18620B591E72426900521DC1 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18620B581E72426900521DC1 /* NotificationCenter.framework */; };
+		18620B5D1E72426900521DC1 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18620B5C1E72426900521DC1 /* TodayViewController.m */; };
+		18620B601E72426900521DC1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18620B5E1E72426900521DC1 /* MainInterface.storyboard */; };
+		18620B641E72426900521DC1 /* Whirling.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18620B571E72426900521DC1 /* Whirling.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1894423E1E779CAA001BE67C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1894423D1E779CAA001BE67C /* QuartzCore.framework */; };
+		1894426F1E77CC40001BE67C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1894426E1E77CC40001BE67C /* CFNetwork.framework */; };
+		189442711E77CC46001BE67C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189442701E77CC46001BE67C /* Security.framework */; };
+		189442741E77CCB9001BE67C /* SocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189442731E77CCB9001BE67C /* SocketVC.m */; };
+		189899AE1E8C9BE0006F5E3E /* AppIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 189899AD1E8C9BE0006F5E3E /* AppIcon2.png */; };
+		189899B31E8CAB3D006F5E3E /* TitleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189899B21E8CAB3D006F5E3E /* TitleTableCell.m */; };
+		189899BB1E8CB4E1006F5E3E /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 189899B61E8CB4E1006F5E3E /* JDStatusBarNotification.m */; };
+		189899BC1E8CB4E1006F5E3E /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 189899B81E8CB4E1006F5E3E /* JDStatusBarStyle.m */; };
+		189899BD1E8CB4E1006F5E3E /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189899BA1E8CB4E1006F5E3E /* JDStatusBarView.m */; };
+		18CA8FC61E7A3787002AA21E /* Steam-.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CA8FC51E7A3787002AA21E /* Steam-.png */; };
+		18CA8FC81E7A378D002AA21E /* spotify.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CA8FC71E7A378D002AA21E /* spotify.png */; };
+		18CA8FCB1E7A4606002AA21E /* HHLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA8FCA1E7A4606002AA21E /* HHLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		182B47871E712BAE00152A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182B47651E712BAC00152A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182B476C1E712BAC00152A17;
+			remoteInfo = whirlingworld;
+		};
+		182B47921E712BAE00152A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182B47651E712BAC00152A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182B476C1E712BAC00152A17;
+			remoteInfo = whirlingworld;
+		};
+		185909C71E767C3900C259DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182B47651E712BAC00152A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185909BD1E767C3900C259DC;
+			remoteInfo = whirlingShare;
+		};
+		18620B621E72426900521DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182B47651E712BAC00152A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18620B561E72426900521DC1;
+			remoteInfo = Whirling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18620B681E72426900521DC1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				185909C91E767C3900C259DC /* whirlingShare.appex in Embed App Extensions */,
+				18620B641E72426900521DC1 /* Whirling.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		182B476D1E712BAC00152A17 /* whirlingworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whirlingworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		182B47711E712BAC00152A17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182B47731E712BAC00152A17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		182B47741E712BAC00152A17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		182B47761E712BAC00152A17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		182B47771E712BAC00152A17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		182B477A1E712BAC00152A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		182B477C1E712BAC00152A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		182B477F1E712BAC00152A17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		182B47811E712BAC00152A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182B47861E712BAE00152A17 /* whirlingworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whirlingworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182B478A1E712BAE00152A17 /* whirlingworldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whirlingworldTests.m; sourceTree = "<group>"; };
+		182B478C1E712BAE00152A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182B47911E712BAE00152A17 /* whirlingworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whirlingworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182B47951E712BAE00152A17 /* whirlingworldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whirlingworldUITests.m; sourceTree = "<group>"; };
+		182B47971E712BAE00152A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182B47B01E71418200152A17 /* whirlingworld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whirlingworld.entitlements; sourceTree = "<group>"; };
+		182B47B41E71419300152A17 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		182B47BA1E7142B500152A17 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		182B47BC1E71430500152A17 /* Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		182B47C61E71496E00152A17 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		182B47C81E71498200152A17 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		185909BE1E767C3900C259DC /* whirlingShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = whirlingShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		185909C01E767C3900C259DC /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		185909C11E767C3900C259DC /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		185909C41E767C3900C259DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		185909C61E767C3900C259DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185909CD1E76879A00C259DC /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		185909CE1E76879A00C259DC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		185909CF1E76879A00C259DC /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		185909D91E76A00800C259DC /* whirlingShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whirlingShare.entitlements; sourceTree = "<group>"; };
+		18620B571E72426900521DC1 /* Whirling.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Whirling.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18620B581E72426900521DC1 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		18620B5B1E72426900521DC1 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		18620B5C1E72426900521DC1 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		18620B5F1E72426900521DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		18620B611E72426900521DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18620C0B1E72640500521DC1 /* Whirling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whirling.entitlements; sourceTree = "<group>"; };
+		1894423D1E779CAA001BE67C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1894426E1E77CC40001BE67C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		189442701E77CC46001BE67C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		189442721E77CCB9001BE67C /* SocketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketVC.h; sourceTree = "<group>"; };
+		189442731E77CCB9001BE67C /* SocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketVC.m; sourceTree = "<group>"; };
+		189899AD1E8C9BE0006F5E3E /* AppIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon2.png; sourceTree = "<group>"; };
+		189899B11E8CAB3D006F5E3E /* TitleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleTableCell.h; sourceTree = "<group>"; };
+		189899B21E8CAB3D006F5E3E /* TitleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTableCell.m; sourceTree = "<group>"; };
+		189899B51E8CB4E1006F5E3E /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
+		189899B61E8CB4E1006F5E3E /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
+		189899B71E8CB4E1006F5E3E /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
+		189899B81E8CB4E1006F5E3E /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
+		189899B91E8CB4E1006F5E3E /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
+		189899BA1E8CB4E1006F5E3E /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
+		18CA8FC51E7A3787002AA21E /* Steam-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Steam-.png"; sourceTree = "<group>"; };
+		18CA8FC71E7A378D002AA21E /* spotify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotify.png; sourceTree = "<group>"; };
+		18CA8FC91E7A4606002AA21E /* HHLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLayer.h; sourceTree = "<group>"; };
+		18CA8FCA1E7A4606002AA21E /* HHLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182B476A1E712BAC00152A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189442711E77CC46001BE67C /* Security.framework in Frameworks */,
+				1894426F1E77CC40001BE67C /* CFNetwork.framework in Frameworks */,
+				1894423E1E779CAA001BE67C /* QuartzCore.framework in Frameworks */,
+				182B47C91E71498200152A17 /* libsqlite3.tbd in Frameworks */,
+				182B47C71E71496E00152A17 /* CoreTelephony.framework in Frameworks */,
+				182B47BB1E7142B500152A17 /* libz.tbd in Frameworks */,
+				182B47B51E71419300152A17 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B47831E712BAE00152A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B478E1E712BAE00152A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185909BB1E767C3900C259DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18620B541E72426900521DC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18620B591E72426900521DC1 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182B47641E712BAC00152A17 = {
+			isa = PBXGroup;
+			children = (
+				182B476F1E712BAC00152A17 /* whirlingworld */,
+				182B47891E712BAE00152A17 /* whirlingworldTests */,
+				182B47941E712BAE00152A17 /* whirlingworldUITests */,
+				18620B5A1E72426900521DC1 /* Whirling */,
+				185909BF1E767C3900C259DC /* whirlingShare */,
+				182B476E1E712BAC00152A17 /* Products */,
+				182B47B11E71418700152A17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		182B476E1E712BAC00152A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182B476D1E712BAC00152A17 /* whirlingworld.app */,
+				182B47861E712BAE00152A17 /* whirlingworldTests.xctest */,
+				182B47911E712BAE00152A17 /* whirlingworldUITests.xctest */,
+				18620B571E72426900521DC1 /* Whirling.appex */,
+				185909BE1E767C3900C259DC /* whirlingShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182B476F1E712BAC00152A17 /* whirlingworld */ = {
+			isa = PBXGroup;
+			children = (
+				189899AD1E8C9BE0006F5E3E /* AppIcon2.png */,
+				182B47B01E71418200152A17 /* whirlingworld.entitlements */,
+				182B47BE1E71493100152A17 /* ThirdPary */,
+				18620C071E725DD100521DC1 /* Resource */,
+				182B47BC1E71430500152A17 /* Header.pch */,
+				182B47731E712BAC00152A17 /* AppDelegate.h */,
+				182B47741E712BAC00152A17 /* AppDelegate.m */,
+				182B47761E712BAC00152A17 /* ViewController.h */,
+				182B47771E712BAC00152A17 /* ViewController.m */,
+				189899B11E8CAB3D006F5E3E /* TitleTableCell.h */,
+				189899B21E8CAB3D006F5E3E /* TitleTableCell.m */,
+				18CA8FC91E7A4606002AA21E /* HHLayer.h */,
+				18CA8FCA1E7A4606002AA21E /* HHLayer.m */,
+				189442721E77CCB9001BE67C /* SocketVC.h */,
+				189442731E77CCB9001BE67C /* SocketVC.m */,
+				182B47791E712BAC00152A17 /* Main.storyboard */,
+				182B477C1E712BAC00152A17 /* Assets.xcassets */,
+				182B477E1E712BAC00152A17 /* LaunchScreen.storyboard */,
+				182B47811E712BAC00152A17 /* Info.plist */,
+				182B47701E712BAC00152A17 /* Supporting Files */,
+			);
+			path = whirlingworld;
+			sourceTree = "<group>";
+		};
+		182B47701E712BAC00152A17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182B47711E712BAC00152A17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182B47891E712BAE00152A17 /* whirlingworldTests */ = {
+			isa = PBXGroup;
+			children = (
+				182B478A1E712BAE00152A17 /* whirlingworldTests.m */,
+				182B478C1E712BAE00152A17 /* Info.plist */,
+			);
+			path = whirlingworldTests;
+			sourceTree = "<group>";
+		};
+		182B47941E712BAE00152A17 /* whirlingworldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				182B47951E712BAE00152A17 /* whirlingworldUITests.m */,
+				182B47971E712BAE00152A17 /* Info.plist */,
+			);
+			path = whirlingworldUITests;
+			sourceTree = "<group>";
+		};
+		182B47B11E71418700152A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189442701E77CC46001BE67C /* Security.framework */,
+				1894426E1E77CC40001BE67C /* CFNetwork.framework */,
+				1894423D1E779CAA001BE67C /* QuartzCore.framework */,
+				182B47C81E71498200152A17 /* libsqlite3.tbd */,
+				182B47C61E71496E00152A17 /* CoreTelephony.framework */,
+				182B47BA1E7142B500152A17 /* libz.tbd */,
+				182B47B41E71419300152A17 /* HealthKit.framework */,
+				18620B581E72426900521DC1 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		182B47BE1E71493100152A17 /* ThirdPary */ = {
+			isa = PBXGroup;
+			children = (
+				189899B41E8CB4E1006F5E3E /* JDStatusBarNotification */,
+			);
+			path = ThirdPary;
+			sourceTree = "<group>";
+		};
+		185909BF1E767C3900C259DC /* whirlingShare */ = {
+			isa = PBXGroup;
+			children = (
+				185909D91E76A00800C259DC /* whirlingShare.entitlements */,
+				185909C01E767C3900C259DC /* ShareViewController.h */,
+				185909C11E767C3900C259DC /* ShareViewController.m */,
+				185909C31E767C3900C259DC /* MainInterface.storyboard */,
+				185909C61E767C3900C259DC /* Info.plist */,
+			);
+			path = whirlingShare;
+			sourceTree = "<group>";
+		};
+		18620B5A1E72426900521DC1 /* Whirling */ = {
+			isa = PBXGroup;
+			children = (
+				18620C0B1E72640500521DC1 /* Whirling.entitlements */,
+				18620B5B1E72426900521DC1 /* TodayViewController.h */,
+				18620B5C1E72426900521DC1 /* TodayViewController.m */,
+				18620B5E1E72426900521DC1 /* MainInterface.storyboard */,
+				18620B611E72426900521DC1 /* Info.plist */,
+			);
+			path = Whirling;
+			sourceTree = "<group>";
+		};
+		18620C071E725DD100521DC1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18CA8FC71E7A378D002AA21E /* spotify.png */,
+				18CA8FC51E7A3787002AA21E /* Steam-.png */,
+				185909CD1E76879A00C259DC /* 2.png */,
+				185909CE1E76879A00C259DC /* 1.png */,
+				185909CF1E76879A00C259DC /* 0.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		189899B41E8CB4E1006F5E3E /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				189899B51E8CB4E1006F5E3E /* JDStatusBarNotification.h */,
+				189899B61E8CB4E1006F5E3E /* JDStatusBarNotification.m */,
+				189899B71E8CB4E1006F5E3E /* JDStatusBarStyle.h */,
+				189899B81E8CB4E1006F5E3E /* JDStatusBarStyle.m */,
+				189899B91E8CB4E1006F5E3E /* JDStatusBarView.h */,
+				189899BA1E8CB4E1006F5E3E /* JDStatusBarView.m */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182B476C1E712BAC00152A17 /* whirlingworld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182B479A1E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworld" */;
+			buildPhases = (
+				182B47691E712BAC00152A17 /* Sources */,
+				182B476A1E712BAC00152A17 /* Frameworks */,
+				182B476B1E712BAC00152A17 /* Resources */,
+				18620B681E72426900521DC1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18620B631E72426900521DC1 /* PBXTargetDependency */,
+				185909C81E767C3900C259DC /* PBXTargetDependency */,
+			);
+			name = whirlingworld;
+			productName = whirlingworld;
+			productReference = 182B476D1E712BAC00152A17 /* whirlingworld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		182B47851E712BAE00152A17 /* whirlingworldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182B479D1E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworldTests" */;
+			buildPhases = (
+				182B47821E712BAE00152A17 /* Sources */,
+				182B47831E712BAE00152A17 /* Frameworks */,
+				182B47841E712BAE00152A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182B47881E712BAE00152A17 /* PBXTargetDependency */,
+			);
+			name = whirlingworldTests;
+			productName = whirlingworldTests;
+			productReference = 182B47861E712BAE00152A17 /* whirlingworldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		182B47901E712BAE00152A17 /* whirlingworldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182B47A01E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworldUITests" */;
+			buildPhases = (
+				182B478D1E712BAE00152A17 /* Sources */,
+				182B478E1E712BAE00152A17 /* Frameworks */,
+				182B478F1E712BAE00152A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				182B47931E712BAE00152A17 /* PBXTargetDependency */,
+			);
+			name = whirlingworldUITests;
+			productName = whirlingworldUITests;
+			productReference = 182B47911E712BAE00152A17 /* whirlingworldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		185909BD1E767C3900C259DC /* whirlingShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185909CA1E767C3900C259DC /* Build configuration list for PBXNativeTarget "whirlingShare" */;
+			buildPhases = (
+				185909BA1E767C3900C259DC /* Sources */,
+				185909BB1E767C3900C259DC /* Frameworks */,
+				185909BC1E767C3900C259DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whirlingShare;
+			productName = whirlingShare;
+			productReference = 185909BE1E767C3900C259DC /* whirlingShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		18620B561E72426900521DC1 /* Whirling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18620B671E72426900521DC1 /* Build configuration list for PBXNativeTarget "Whirling" */;
+			buildPhases = (
+				18620B531E72426900521DC1 /* Sources */,
+				18620B541E72426900521DC1 /* Frameworks */,
+				18620B551E72426900521DC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Whirling;
+			productName = Whirling;
+			productReference = 18620B571E72426900521DC1 /* Whirling.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		182B47651E712BAC00152A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hhh;
+				TargetAttributes = {
+					182B476C1E712BAC00152A17 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					182B47851E712BAE00152A17 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 182B476C1E712BAC00152A17;
+					};
+					182B47901E712BAE00152A17 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 182B476C1E712BAC00152A17;
+					};
+					185909BD1E767C3900C259DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					18620B561E72426900521DC1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 182B47681E712BAC00152A17 /* Build configuration list for PBXProject "whirlingworld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 182B47641E712BAC00152A17;
+			productRefGroup = 182B476E1E712BAC00152A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182B476C1E712BAC00152A17 /* whirlingworld */,
+				182B47851E712BAE00152A17 /* whirlingworldTests */,
+				182B47901E712BAE00152A17 /* whirlingworldUITests */,
+				18620B561E72426900521DC1 /* Whirling */,
+				185909BD1E767C3900C259DC /* whirlingShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182B476B1E712BAC00152A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185909D61E76879A00C259DC /* 0.png in Resources */,
+				185909D31E76879A00C259DC /* 1.png in Resources */,
+				182B47801E712BAC00152A17 /* LaunchScreen.storyboard in Resources */,
+				185909D01E76879A00C259DC /* 2.png in Resources */,
+				182B477D1E712BAC00152A17 /* Assets.xcassets in Resources */,
+				18CA8FC61E7A3787002AA21E /* Steam-.png in Resources */,
+				182B477B1E712BAC00152A17 /* Main.storyboard in Resources */,
+				189899AE1E8C9BE0006F5E3E /* AppIcon2.png in Resources */,
+				18CA8FC81E7A378D002AA21E /* spotify.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B47841E712BAE00152A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B478F1E712BAE00152A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185909BC1E767C3900C259DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185909D81E76879A00C259DC /* 0.png in Resources */,
+				185909D51E76879A00C259DC /* 1.png in Resources */,
+				185909D21E76879A00C259DC /* 2.png in Resources */,
+				185909C51E767C3900C259DC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18620B551E72426900521DC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185909D71E76879A00C259DC /* 0.png in Resources */,
+				185909D41E76879A00C259DC /* 1.png in Resources */,
+				185909D11E76879A00C259DC /* 2.png in Resources */,
+				18620B601E72426900521DC1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182B47691E712BAC00152A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182B47781E712BAC00152A17 /* ViewController.m in Sources */,
+				189899BB1E8CB4E1006F5E3E /* JDStatusBarNotification.m in Sources */,
+				182B47751E712BAC00152A17 /* AppDelegate.m in Sources */,
+				189442741E77CCB9001BE67C /* SocketVC.m in Sources */,
+				18CA8FCB1E7A4606002AA21E /* HHLayer.m in Sources */,
+				189899BC1E8CB4E1006F5E3E /* JDStatusBarStyle.m in Sources */,
+				182B47721E712BAC00152A17 /* main.m in Sources */,
+				189899BD1E8CB4E1006F5E3E /* JDStatusBarView.m in Sources */,
+				189899B31E8CAB3D006F5E3E /* TitleTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B47821E712BAE00152A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182B478B1E712BAE00152A17 /* whirlingworldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		182B478D1E712BAE00152A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182B47961E712BAE00152A17 /* whirlingworldUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185909BA1E767C3900C259DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185909C21E767C3900C259DC /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18620B531E72426900521DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18620B5D1E72426900521DC1 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		182B47881E712BAE00152A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182B476C1E712BAC00152A17 /* whirlingworld */;
+			targetProxy = 182B47871E712BAE00152A17 /* PBXContainerItemProxy */;
+		};
+		182B47931E712BAE00152A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 182B476C1E712BAC00152A17 /* whirlingworld */;
+			targetProxy = 182B47921E712BAE00152A17 /* PBXContainerItemProxy */;
+		};
+		185909C81E767C3900C259DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185909BD1E767C3900C259DC /* whirlingShare */;
+			targetProxy = 185909C71E767C3900C259DC /* PBXContainerItemProxy */;
+		};
+		18620B631E72426900521DC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18620B561E72426900521DC1 /* Whirling */;
+			targetProxy = 18620B621E72426900521DC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		182B47791E712BAC00152A17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182B477A1E712BAC00152A17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		182B477E1E712BAC00152A17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182B477F1E712BAC00152A17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		185909C31E767C3900C259DC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185909C41E767C3900C259DC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		18620B5E1E72426900521DC1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18620B5F1E72426900521DC1 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182B47981E712BAE00152A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		182B47991E712BAE00152A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		182B479B1E712BAE00152A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialUI",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/whirlingworld/Header.pch";
+				INFOPLIST_FILE = whirlingworld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whirlingworld/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/AlipayShare",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/Email",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/SMS",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/YouDao",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		182B479C1E712BAE00152A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialUI",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/whirlingworld/Header.pch";
+				INFOPLIST_FILE = whirlingworld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whirlingworld/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMessage_Sdk_1.4.0",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/AlipayShare",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/Email",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/SMS",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/YouDao",
+					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		182B479E1E712BAE00152A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingworldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whirlingworld.app/whirlingworld";
+			};
+			name = Debug;
+		};
+		182B479F1E712BAE00152A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingworldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whirlingworld.app/whirlingworld";
+			};
+			name = Release;
+		};
+		182B47A11E712BAE00152A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingworldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = whirlingworld;
+			};
+			name = Debug;
+		};
+		182B47A21E712BAE00152A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingworldUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = whirlingworld;
+			};
+			name = Release;
+		};
+		185909CB1E767C3900C259DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = whirlingShare/whirlingShare.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		185909CC1E767C3900C259DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = whirlingShare/whirlingShare.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = whirlingShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		18620B651E72426900521DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Whirling/Whirling.entitlements;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = Whirling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.Whirling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		18620B661E72426900521DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Whirling/Whirling.entitlements;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				INFOPLIST_FILE = Whirling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.Whirling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182B47681E712BAC00152A17 /* Build configuration list for PBXProject "whirlingworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182B47981E712BAE00152A17 /* Debug */,
+				182B47991E712BAE00152A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182B479A1E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182B479B1E712BAE00152A17 /* Debug */,
+				182B479C1E712BAE00152A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182B479D1E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182B479E1E712BAE00152A17 /* Debug */,
+				182B479F1E712BAE00152A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182B47A01E712BAE00152A17 /* Build configuration list for PBXNativeTarget "whirlingworldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182B47A11E712BAE00152A17 /* Debug */,
+				182B47A21E712BAE00152A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185909CA1E767C3900C259DC /* Build configuration list for PBXNativeTarget "whirlingShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185909CB1E767C3900C259DC /* Debug */,
+				185909CC1E767C3900C259DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18620B671E72426900521DC1 /* Build configuration list for PBXNativeTarget "Whirling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18620B651E72426900521DC1 /* Debug */,
+				18620B661E72426900521DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 182B47651E712BAC00152A17 /* Project object */;
+}

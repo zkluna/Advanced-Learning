@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Whirling.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>whirlingShare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>whirlingworld.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>182B476C1E712BAC00152A17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>182B47851E712BAE00152A17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>182B47901E712BAE00152A17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>185909BD1E767C3900C259DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18620B561E72426900521DC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18620C671E7293CD00521DC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>18620C771E729B7E00521DC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

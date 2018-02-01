@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j1y-V4-xli">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVY-qy-vbn">
+                                <rect key="frame" x="20" y="233.5" width="335" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qur-98-DQp">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gt-qP-NTH">
+                                                <rect key="frame" x="5" y="0.0" width="45" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="0H4-K2-N2B"/>
+                                                </constraints>
+                                                <state key="normal" title="取消">
+                                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="j1y-V4-xli" eventType="touchUpInside" id="DTT-tp-o4V"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whirling World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AQ-NI-OVD">
+                                                <rect key="frame" x="114.5" y="0.0" width="106.5" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-dg-nRd">
+                                                <rect key="frame" x="0.0" y="39" width="335" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="0.5" id="2jD-gE-wIq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="17w-ZA-nNp"/>
+                                            <constraint firstItem="7AQ-NI-OVD" firstAttribute="top" secondItem="Qur-98-DQp" secondAttribute="top" id="1Sv-hV-f4o"/>
+                                            <constraint firstItem="8gt-qP-NTH" firstAttribute="top" secondItem="Qur-98-DQp" secondAttribute="top" id="4CK-pW-3KJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="7AQ-NI-OVD" secondAttribute="bottom" constant="1" id="7eE-fZ-7cG"/>
+                                            <constraint firstAttribute="bottom" secondItem="HFk-dg-nRd" secondAttribute="bottom" id="LM9-eA-Inx"/>
+                                            <constraint firstItem="8gt-qP-NTH" firstAttribute="leading" secondItem="Qur-98-DQp" secondAttribute="leading" constant="5" id="gjF-Pa-eEr"/>
+                                            <constraint firstAttribute="bottom" secondItem="8gt-qP-NTH" secondAttribute="bottom" id="huT-Cj-Ru1"/>
+                                            <constraint firstItem="7AQ-NI-OVD" firstAttribute="centerX" secondItem="Qur-98-DQp" secondAttribute="centerX" id="mhi-lf-3qU"/>
+                                            <constraint firstItem="HFk-dg-nRd" firstAttribute="leading" secondItem="Qur-98-DQp" secondAttribute="leading" id="qTT-Kw-YR9"/>
+                                            <constraint firstAttribute="trailing" secondItem="HFk-dg-nRd" secondAttribute="trailing" id="xgc-Wa-EB8"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tjM-iK-WiE">
+                                        <rect key="frame" x="0.0" y="40" width="335" height="160"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="j1y-V4-xli" id="YZm-KX-PYx"/>
+                                            <outlet property="delegate" destination="j1y-V4-xli" id="rmb-cM-FDe"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tjM-iK-WiE" secondAttribute="trailing" id="KwO-6O-x3g"/>
+                                    <constraint firstItem="Qur-98-DQp" firstAttribute="leading" secondItem="NVY-qy-vbn" secondAttribute="leading" id="QnS-nw-jTi"/>
+                                    <constraint firstItem="tjM-iK-WiE" firstAttribute="top" secondItem="Qur-98-DQp" secondAttribute="bottom" id="UK6-tQ-xT8"/>
+                                    <constraint firstAttribute="bottom" secondItem="tjM-iK-WiE" secondAttribute="bottom" id="eY7-rg-lQO"/>
+                                    <constraint firstItem="Qur-98-DQp" firstAttribute="top" secondItem="NVY-qy-vbn" secondAttribute="top" id="kul-vb-ewV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qur-98-DQp" secondAttribute="trailing" id="nlM-be-ePK"/>
+                                    <constraint firstItem="tjM-iK-WiE" firstAttribute="leading" secondItem="NVY-qy-vbn" secondAttribute="leading" id="tnb-2D-0zr"/>
+                                    <constraint firstAttribute="height" constant="200" id="vzg-D8-7na"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NVY-qy-vbn" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leading" constant="20" id="AaK-MY-ZU1"/>
+                            <constraint firstAttribute="trailing" secondItem="NVY-qy-vbn" secondAttribute="trailing" constant="20" id="dcb-mQ-AjK"/>
+                            <constraint firstItem="NVY-qy-vbn" firstAttribute="centerY" secondItem="wbc-yd-nQP" secondAttribute="centerY" id="fjf-ex-oTN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="NVY-qy-vbn" id="IAf-Jc-b1c"/>
+                        <outlet property="cancelBtn" destination="8gt-qP-NTH" id="NJj-zK-JKn"/>
+                        <outlet property="tableView" destination="tjM-iK-WiE" id="svR-aW-fcJ"/>
+                        <outlet property="titleLab" destination="7AQ-NI-OVD" id="Xcq-9u-dT1"/>
+                        <outlet property="vHeight" destination="vzg-D8-7na" id="aqY-PK-3V7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
