@@ -1,4 +1,5 @@
-# 42 --
+# 进阶学习
+> 一些有趣的、实用的、高端的技术学习探索。目前主要是iOS方面的，以后逐渐会加入些别的，如python等
 
 ## iOS ： 
 >  1、iBeacon | AnyiBeacon  实现扫描附近iBeacon，查看iBeacon相关参数。通过自定义CLBeaconRegion 实现可以扫描所有UUID的iBeacon设备。
@@ -10,6 +11,7 @@
 
 > 4、iOS工程自动打包脚本并上传到fir.im上。
   Next: 自动修改版本号、发送email等
+  
   
 
 
