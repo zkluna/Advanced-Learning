@@ -8,7 +8,7 @@
 主要是一些我们平时忽略确实很强大功能。有Today、Share、Action Extension；更换app图标等。
 Next: 其他的一些apple的特有的、强大的功能
 
->  2、iBeaconDemo AnyiBeacon  实现扫描附近iBeacon，查看iBeacon相关参数。通过自定义CLBeaconRegion 实现可以扫描所有UUID的iBeacon设备。
+>  2、iBeaconDemo | AnyiBeacon  实现扫描附近iBeacon，查看iBeacon相关参数。通过自定义CLBeaconRegion 实现可以扫描所有UUID的iBeacon设备。
  Next:将手机设置为iBeacon、蓝牙、NFC等   
 
 >  3、PhotoData  简化一个ViewController，将TableViewDataSource抽离出去，参考： [objc.io的 Testing View Contollers] (https://www.objc.io/issues/1-view-controllers/lighter-view-controllers/)
@@ -23,5 +23,8 @@ Next: 其他的一些apple的特有的、强大的功能
 小可正在努力学习python，以后会逐渐加如一些python的小demo 
 
 >  0、 ======================
+## Java ：
+总是很难窥知命运的走向。重新捡起Java，以后会逐渐加如一些Java的小demo
 
+>  0、 ======================
 
