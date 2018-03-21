@@ -1,0 +1,6 @@
+framework module BProject {
+  umbrella header "BProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AProject" "$PODS_CONFIGURATION_BUILD_DIR/A_Category" "$PODS_CONFIGURATION_BUILD_DIR/BProject" "$PODS_CONFIGURATION_BUILD_DIR/B_Category" "$PODS_CONFIGURATION_BUILD_DIR/CTMediator" "$PODS_CONFIGURATION_BUILD_DIR/C_Category" "$PODS_CONFIGURATION_BUILD_DIR/HandyFrame"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AProject/AProject.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/A_Category/A_Category.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/BProject/BProject.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/B_Category/B_Category.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CTMediator/CTMediator.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/C_Category/C_Category.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/HandyFrame/HandyFrame.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AProject" -framework "A_Category" -framework "BProject" -framework "B_Category" -framework "CTMediator" -framework "C_Category" -framework "HandyFrame"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

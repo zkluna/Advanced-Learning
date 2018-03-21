@@ -19,6 +19,10 @@ Next: 其他的一些apple的特有的、强大的功能
   Next: 自动修改版本号、发送email等
   
 > 6、PasswordTF  密码输入框，用两种方法实现，一：继承UITextFiled，改变每个字符的间隔；二：通过KeyInput自定义一个View。 还有更重要的 尝试了用runtime实现模块化，解耦（参考微信读书的博客）。
+
+> 7、CTMediator 承接上一个模块化尝试。通过casa大神的CTMediator完成模块化，CTMediator实质上通过runtime实现解耦，基本思路跟微信读书博客的中runtime实现组件化是一样。不过大神进行一层很好的封装，是的调用起来更加方便。先给一个使用的Demo，至于更多的使用心得要等我们项目实现模块化再一步步去深入了解学习。
+
+> 
 ## Python ：
 小可正在努力学习python，以后会逐渐加如一些python的小demo 
 
