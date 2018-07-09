@@ -47,6 +47,8 @@
 		18CA8FC61E7A3787002AA21E /* Steam-.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CA8FC51E7A3787002AA21E /* Steam-.png */; };
 		18CA8FC81E7A378D002AA21E /* spotify.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CA8FC71E7A378D002AA21E /* spotify.png */; };
 		18CA8FCB1E7A4606002AA21E /* HHLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA8FCA1E7A4606002AA21E /* HHLayer.m */; };
+		58161D4F2072669F005F250D /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 58161D4E2072669F005F250D /* NotificationService.m */; };
+		58161D532072669F005F250D /* WhirlingNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58161D4B2072669F005F250D /* WhirlingNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,13 @@
 			remoteGlobalIDString = 18620B561E72426900521DC1;
 			remoteInfo = Whirling;
 		};
+		58161D512072669F005F250D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 182B47651E712BAC00152A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58161D4A2072669F005F250D;
+			remoteInfo = WhirlingNotificationService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +98,7 @@
 			files = (
 				185909C91E767C3900C259DC /* whirlingShare.appex in Embed App Extensions */,
 				18620B641E72426900521DC1 /* Whirling.appex in Embed App Extensions */,
+				58161D532072669F005F250D /* WhirlingNotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +162,10 @@
 		18CA8FC71E7A378D002AA21E /* spotify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotify.png; sourceTree = "<group>"; };
 		18CA8FC91E7A4606002AA21E /* HHLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLayer.h; sourceTree = "<group>"; };
 		18CA8FCA1E7A4606002AA21E /* HHLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLayer.m; sourceTree = "<group>"; };
+		58161D4B2072669F005F250D /* WhirlingNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WhirlingNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		58161D4D2072669F005F250D /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		58161D4E2072669F005F250D /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		58161D502072669F005F250D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +212,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58161D482072669F005F250D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -209,6 +230,7 @@
 				182B47941E712BAE00152A17 /* whirlingworldUITests */,
 				18620B5A1E72426900521DC1 /* Whirling */,
 				185909BF1E767C3900C259DC /* whirlingShare */,
+				58161D4C2072669F005F250D /* WhirlingNotificationService */,
 				182B476E1E712BAC00152A17 /* Products */,
 				182B47B11E71418700152A17 /* Frameworks */,
 			);
@@ -222,6 +244,7 @@
 				182B47911E712BAE00152A17 /* whirlingworldUITests.xctest */,
 				18620B571E72426900521DC1 /* Whirling.appex */,
 				185909BE1E767C3900C259DC /* whirlingShare.appex */,
+				58161D4B2072669F005F250D /* WhirlingNotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,6 +374,16 @@
 			path = JDStatusBarNotification;
 			sourceTree = "<group>";
 		};
+		58161D4C2072669F005F250D /* WhirlingNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				58161D4D2072669F005F250D /* NotificationService.h */,
+				58161D4E2072669F005F250D /* NotificationService.m */,
+				58161D502072669F005F250D /* Info.plist */,
+			);
+			path = WhirlingNotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +401,7 @@
 			dependencies = (
 				18620B631E72426900521DC1 /* PBXTargetDependency */,
 				185909C81E767C3900C259DC /* PBXTargetDependency */,
+				58161D522072669F005F250D /* PBXTargetDependency */,
 			);
 			name = whirlingworld;
 			productName = whirlingworld;
@@ -444,6 +478,23 @@
 			productReference = 18620B571E72426900521DC1 /* Whirling.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		58161D4A2072669F005F250D /* WhirlingNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58161D562072669F005F250D /* Build configuration list for PBXNativeTarget "WhirlingNotificationService" */;
+			buildPhases = (
+				58161D472072669F005F250D /* Sources */,
+				58161D482072669F005F250D /* Frameworks */,
+				58161D492072669F005F250D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhirlingNotificationService;
+			productName = WhirlingNotificationService;
+			productReference = 58161D4B2072669F005F250D /* WhirlingNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -455,7 +506,7 @@
 				TargetAttributes = {
 					182B476C1E712BAC00152A17 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K4HCWNG2X5;
+						DevelopmentTeam = BF99GA352V;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -504,6 +555,11 @@
 							};
 						};
 					};
+					58161D4A2072669F005F250D = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = K4HCWNG2X5;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 182B47681E712BAC00152A17 /* Build configuration list for PBXProject "whirlingworld" */;
@@ -524,6 +580,7 @@
 				182B47901E712BAE00152A17 /* whirlingworldUITests */,
 				18620B561E72426900521DC1 /* Whirling */,
 				185909BD1E767C3900C259DC /* whirlingShare */,
+				58161D4A2072669F005F250D /* WhirlingNotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -581,6 +638,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58161D492072669F005F250D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -632,6 +696,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58161D472072669F005F250D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58161D4F2072669F005F250D /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -654,6 +726,11 @@
 			isa = PBXTargetDependency;
 			target = 18620B561E72426900521DC1 /* Whirling */;
 			targetProxy = 18620B621E72426900521DC1 /* PBXContainerItemProxy */;
+		};
+		58161D522072669F005F250D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58161D4A2072669F005F250D /* WhirlingNotificationService */;
+			targetProxy = 58161D512072669F005F250D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -788,7 +865,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
-				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BF99GA352V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
@@ -822,7 +900,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
-				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BF99GA352V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
@@ -955,6 +1034,58 @@
 			};
 			name = Release;
 		};
+		58161D542072669F005F250D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WhirlingNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58161D552072669F005F250D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4HCWNG2X5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WhirlingNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1008,6 +1139,15 @@
 			buildConfigurations = (
 				18620B651E72426900521DC1 /* Debug */,
 				18620B661E72426900521DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58161D562072669F005F250D /* Build configuration list for PBXNativeTarget "WhirlingNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58161D542072669F005F250D /* Debug */,
+				58161D552072669F005F250D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
