@@ -72,48 +72,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 }
-#pragma mark  --z Layer 
-- (void)layerTestMethod {
-    /*
-    CALayer *imgLayer = [CALayer layer];
-    imgLayer.contents = (__bridge id)[UIImage imageNamed:@"Stream-"].CGImage;
-    UIImage *img = [UIImage imageNamed:@"Steam-"];
-    _tView.layer.contents = (__bridge id)img.CGImage;
-//    _tView.contentMode = UIViewContentModeScaleAspectFit;
-    _tView.layer.contentsGravity = kCAGravityCenter;
-    _tView.layer.contentsScale = [UIScreen mainScreen].scale;
-     */
-    /*
-    CALayer *blueLayer = [CALayer layer];
-    blueLayer.frame = CGRectMake(50, 0, 100, 100);
-    blueLayer.backgroundColor = [UIColor blueColor].CGColor;
-    blueLayer.delegate = self;
-    blueLayer.contentsScale = [UIScreen mainScreen].scale;
-    [_tView.layer addSublayer:blueLayer];
-    [blueLayer display];
-    */
-    /*
-    HHLayer *layer = [HHLayer layer];
-    layer.bounds = CGRectMake(0, 0, 100, 100);
-    layer.position = CGPointMake(100, 60);
-    [layer setNeedsDisplay];
-    [self.tView.layer addSublayer:layer];
-    
-    _imgView.layer.shadowColor = [UIColor grayColor].CGColor;
-    _imgView.layer.shadowOffset = CGSizeMake(10, 10);
-    _imgView.layer.shadowOpacity = 0.5;
-    
-    _imgView.layer.cornerRadius = 15;
-    _imgView.layer.masksToBounds = YES;
-    
-    _imgView.layer.borderWidth = 5;
-    _imgView.layer.borderColor = [UIColor orangeColor].CGColor;
-    
-    _imgView.layer.transform = CATransform3DMakeRotation(M_PI_4, 0, 0, 1);
-    [_imgView.layer addSublayer:shadowLayer];
-    */
-}
-#pragma mark  --z Layer Delegate 
+
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
     // draw a thick red circle
     CGContextSetLineWidth(ctx, 10.0f);

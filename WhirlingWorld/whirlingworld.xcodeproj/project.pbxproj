@@ -506,7 +506,7 @@
 				TargetAttributes = {
 					182B476C1E712BAC00152A17 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BF99GA352V;
+						DevelopmentTeam = 38KL34YC4B;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -866,7 +866,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = BF99GA352V;
+				DEVELOPMENT_TEAM = 38KL34YC4B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
@@ -890,7 +890,7 @@
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/YouDao",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling12323;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -901,7 +901,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = whirlingworld/whirlingworld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = BF99GA352V;
+				DEVELOPMENT_TEAM = 38KL34YC4B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM",
@@ -925,7 +925,7 @@
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/SocialLibraries/YouDao",
 					"$(PROJECT_DIR)/whirlingworld/ThirdPary/UM/UMSocial/UMSocialSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling12323;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -988,7 +988,7 @@
 				DEVELOPMENT_TEAM = K4HCWNG2X5;
 				INFOPLIST_FILE = whirlingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.WhirlingShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1002,7 +1002,7 @@
 				DEVELOPMENT_TEAM = K4HCWNG2X5;
 				INFOPLIST_FILE = whirlingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.WhirlingShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1015,7 +1015,7 @@
 				DEVELOPMENT_TEAM = K4HCWNG2X5;
 				INFOPLIST_FILE = Whirling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.Whirling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.Whirling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1028,7 +1028,7 @@
 				DEVELOPMENT_TEAM = K4HCWNG2X5;
 				INFOPLIST_FILE = Whirling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.Whirling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.Whirling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1053,7 +1053,7 @@
 				INFOPLIST_FILE = WhirlingNotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.WhirlingNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1079,7 +1079,7 @@
 				INFOPLIST_FILE = WhirlingNotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirlingworld.WhirlingNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhh.whirling.WhirlingNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
