@@ -3,10 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>compileBitcode</key>
-	<false/>
-	<key>teamID</key>
-	<string>开发者账号的teamID</string>
+	<true/>
+	<key>destination</key>
+	<string>export</string>
 	<key>method</key>
 	<string>development</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>9Z3N95T5TQ</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
 </dict>
 </plist>

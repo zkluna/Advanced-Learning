@@ -1,0 +1,79 @@
+#!/bin/bash
+# source ~/.rvm/scripts/rvm
+DIRECTORY=$(dirname "$0")
+DIRECTORY=$(cd "$DIRECTORY" && pwd -P)
+
+FILE=""
+OUT_DIR=""
+
+for((i=1;i<=$#;i+=2))
+do
+	paramName=$(eval echo \$$i)
+	next=$(($i+1))
+	paramValue=$(eval echo \$$next)
+	if [ $paramName = "-f" ]
+	then
+		FILE=$(cd "$paramValue" && pwd -P)
+		if FILE=$(cd "$paramValue" && pwd -P) ;then
+			echo "项目文件路径:"$FILE
+		else
+			echo "该文件不存在"
+			exit 0
+		fi
+		
+	elif [ $paramName = "-o" ]
+	then
+		if OUT_DIR=$(cd "$paramValue" && pwd -P) ;then
+			echo "输出文件夹路径"$OUT_DIR
+		else
+			mkdir -p $paramValue
+			OUT_DIR=$(cd "$paramValue" && pwd -P)
+		fi
+	fi
+done
+
+if [ ! -n "$FILE" ] || [ ! -n "$OUT_DIR" ] 
+then
+		echo "请输入项目的xcodeproj或者xcworkspace的路径参数-f 导出文件夹-o 例如 iOS_build -f xxx/xxx.xcodeproj -o xxx/xxx"
+		exit 0
+fi	
+
+FILE_DIR=$(dirname $FILE)
+FILE_NAME=$(basename $FILE)
+echo "----------- $OUT_DIR"
+#echo $FILE $FILE_DIR $FILE_NAME
+
+# ../*****.xcodeproj
+if [ -d $FILE ]; then
+	FILE_ARR=(${FILE_NAME//./ })
+	fileName=${FILE_ARR[0]}
+	fileType=${FILE_ARR[1]}
+	len=${#FILE_ARR[@]}  
+	#echo len $len $FILE_ARR
+	echo fileType:$fileType
+	if [ $len -le 1 ];then
+		echo "该文件不存在"
+		exit 0
+	fi
+
+	if [ $fileType == "xcodeproj" ];then
+	  echo project is xcodeproj
+	  	xcodebuild -project $FILE -scheme $fileName -configuration Release -sdk iphoneos clean
+		xcodebuild -project $FILE -scheme $fileName -configuration Release -archivePath $FILE_DIR/build/${fileName}.xcarchive archive
+		xcodebuild -exportArchive -archivePath $FILE_DIR/build/$fileName.xcarchive -exportPath $OUT_DIR/ -exportOptionsPlist $DIRECTORY/Info.plist
+		rm -rf $FILE_DIR/build
+	elif [ $fileType == "xcworkspace" ]; then
+	  echo project is xcworkspace
+	    xcodebuild -workspace $FILE -scheme $fileName -configuration Release -sdk iphoneos clean
+		xcodebuild -workspace $FILE -scheme $fileName -configuration Release -archivePath $FILE_DIR/build/${fileName}.xcarchive archive
+		xcodebuild -exportArchive -archivePath $FILE_DIR/build/$fileName.xcarchive -exportPath $OUT_DIR/ -exportOptionsPlist $DIRECTORY/Info.plist
+		rm -rf $FILE_DIR/build
+	else
+		echo "该文件无法编译"
+	fi
+    
+else
+	echo "该文件不存在"
+fi
+
+
